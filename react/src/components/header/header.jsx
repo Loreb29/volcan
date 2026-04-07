@@ -1,4 +1,3 @@
-import "./header.module.css";
 function Header() {
   return (
     <header>

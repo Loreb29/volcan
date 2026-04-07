@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── MAIN & WRAPPER fill remaining height ─────────── */
+main {
+  flex: 1;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* ── TABLE ────────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 700px;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1.5px solid var(--border);
+  padding: 0;
+  vertical-align: middle;
+}
+thead tr {
+  scroll-snap-align: start;
+}
+/* Header row */
+thead tr th {
+  background: var(--green-dark);
+  height: 56px;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+thead tr th:first-child {
+  width: 160px;
+}
+thead tr th:not(:first-child) {
+  width: 160px;
+}
+
+/* Body rows */
+tbody tr {
+  height: 90px;
+  scroll-snap-align: center;
+  scroll-snap-stop: normal;
+}
+tbody tr:nth-child(even) td {
+  background: var(--row-alt);
+}
+tbody tr:nth-child(odd) td {
+  background: var(--card-bg);
+}
+
+/* Row label cell */
+tbody tr td:first-child {
+  background: var(--header-bg);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-header);
+  padding: 10px 14px;
+  letter-spacing: 0.02em;
+  border-right: 2px solid var(--border);
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+/* Data cells */
+tbody tr td:not(:first-child) {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-sub);
+  transition: background 0.15s;
+  cursor: default;
+}
+
+tbody tr td:not(:first-child):hover {
+  background: #d8edd8 !important;
+}
+:root {
+  --green-dark: #2d6a2d;
+  --gold: #f5c518;
+  --card-bg: #ffffff;
+  --header-bg: #f5f8f5;
+  --row-alt: #f0f5f0;
+  --border: #b8ccb8;
+  --text-main: #1a2e1a;
+  --text-sub: #4a6a4a;
+  --text-header: #2d5a2d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── MAIN & WRAPPER fill remaining height ─────────── */
+main {
+  flex: 1;
+  overflow: auto;
+}
+
+/* ── TABLE ────────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 700px;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1.5px solid var(--border);
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* Header row */
+thead tr th {
+  background: var(--green-dark);
+  height: 56px;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+thead tr th:first-child {
+  width: 160px;
+}
+thead tr th:not(:first-child) {
+  width: 160px;
+}
+
+/* Body rows */
+tbody tr {
+  height: 90px;
+}
+tbody tr:nth-child(even) td {
+  background: var(--row-alt);
+}
+tbody tr:nth-child(odd) td {
+  background: var(--card-bg);
+}
+
+/* Row label cell */
+tbody tr td:first-child {
+  background: var(--header-bg);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-header);
+  padding: 10px 14px;
+  letter-spacing: 0.02em;
+  border-right: 2px solid var(--border);
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+/* Data cells */
+tbody tr td:not(:first-child) {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-sub);
+  transition: background 0.15s;
+  cursor: default;
+}
+
+tbody tr td:not(:first-child):hover {
+  background: #d8edd8 !important;
+}
