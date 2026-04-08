@@ -1,18 +1,16 @@
 import { useState } from "react";
-import Header from "../components/header/header.jsx";
 import Footer from "../components/footer/footer.jsx";
-import Grid from "./grid/grid.jsx";
+import Login from "./login/login.jsx";
 
-function viewsGrid() {
+function ViewsLogin() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Header />
-      <Grid />
+      <Login />
       <Footer />
     </>
   );
 }
 
-export default viewsGrid;
+export default ViewsLogin;

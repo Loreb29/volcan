@@ -1,0 +1,156 @@
+.bodyLogin {
+  background-color: var(--green-medium);
+  background-image: linear-gradient(
+    135deg,
+    var(--green-dark) 0%,
+    var(--green-medium) 100%
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  overflow: hidden;
+}
+
+.login_container {
+  background-color: var(--neutral-light);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px var(--shadow);
+  width: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.login_header {
+  background-color: var(--green-dark);
+  padding: 25px 0;
+  text-align: center;
+  position: relative;
+}
+
+.login_header::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background-color: var(--green-dark);
+  transform: skewY(-2deg);
+}
+
+.school_logo {
+  background-color: var(--yellow-accent);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 4px solid white;
+  position: relative;
+  z-index: 2;
+}
+
+.school_logo svg {
+  width: 42px;
+  height: 42px;
+  fill: var(--green-dark);
+}
+
+.login_form {
+  padding: 40px 30px 30px;
+}
+
+.form_title {
+  color: var(--green-dark);
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.form_group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form_group svg {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  fill: var(--green-medium);
+}
+
+.form_control {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.form_control:focus {
+  border-color: var(--yellow-accent);
+  box-shadow: 0 0 0 3px rgba(240, 200, 8, 0.2);
+  outline: none;
+}
+
+.forgot_password {
+  display: block;
+  text-align: right;
+  color: var(--green-medium);
+  font-size: 14px;
+  margin-bottom: 25px;
+  text-decoration: none;
+}
+
+.forgot_password:hover {
+  color: var(--green-dark);
+  text-decoration: underline;
+}
+
+.btn_login {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--yellow-accent);
+  color: var(--green-dark);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn_login:hover {
+  background-color: var(--green-dark);
+  color: var(--yellow-accent);
+}
+
+.login_footer {
+  text-align: center;
+  padding: 20px 30px;
+  background-color: var(--yellow-light);
+  border-top: 1px solid #eee;
+}
+
+.login_footer p {
+  color: var(--green-dark);
+  font-size: 14px;
+}
+
+.login_footer a {
+  color: var(--green-medium);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login_footer a:hover {
+  text-decoration: underline;
+}

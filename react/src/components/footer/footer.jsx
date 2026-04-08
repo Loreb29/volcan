@@ -1,5 +1,9 @@
-import "./footer.module.css";
+import style from "./footer.module.css";
 function Footer() {
-  return <footer>Sistema Académico &copy; 2026</footer>;
+  return (
+    <footer className={style.footerVolcan}>
+      Sistema Académico &copy; 2026
+    </footer>
+  );
 }
 export default Footer;

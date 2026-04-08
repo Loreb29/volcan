@@ -1,13 +1,4 @@
-/* ── RESET ────────────────────────────────────────── */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
+.bodyCurso {
   font-family: "Outfit", sans-serif;
   background: var(--bg);
   color: var(--text-main);
@@ -17,7 +8,7 @@ body {
 }
 
 /* ── MAIN ─────────────────────────────────────────── */
-main {
+.mainCurso {
   flex: 1;
   padding: 40px 32px 60px;
   max-width: 1100px;
@@ -26,14 +17,14 @@ main {
 }
 
 /* ── GRID ─────────────────────────────────────────── */
-.courses-grid {
+.courses_grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 24px;
 }
 
 /* ── CARD ─────────────────────────────────────────── */
-.course-card {
+.course_card {
   background: var(--card-bg);
   border: 1.5px solid var(--card-border);
   border-radius: var(--radius-card);
@@ -47,13 +38,13 @@ main {
   cursor: pointer;
 }
 
-.course-card:hover {
+.course_card:hover {
   transform: translateY(-5px) scale(1.015);
   box-shadow: var(--shadow-card-hover);
 }
 
 /* thumbnail / image area */
-.course-thumbnail {
+.course_thumbnail {
   width: 100%;
   aspect-ratio: 4/3;
   background: #e4e9e4;
@@ -68,7 +59,7 @@ main {
   /* swap for <img> if you have one */
 }
 
-.course-thumbnail img {
+.course_thumbnail img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -76,14 +67,14 @@ main {
 }
 
 /* card body */
-.course-body {
+.course_body {
   padding: 14px 16px 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.course-number {
+.course_number {
   font-size: 2.8rem;
   font-weight: 800;
   line-height: 1;
@@ -91,7 +82,7 @@ main {
   letter-spacing: -0.02em;
 }
 
-.course-label {
+.course_label {
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--text-sub);
@@ -100,13 +91,13 @@ main {
 }
 
 /* progress bar */
-.progress-row {
+.progress_row {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.progress-bar-wrap {
+.progress_bar_wrap {
   flex: 1;
   height: 7px;
   background: var(--bar-track);
@@ -114,14 +105,14 @@ main {
   overflow: hidden;
 }
 
-.progress-bar-fill {
+.progress_bar_fill {
   height: 100%;
   border-radius: 99px;
-  background: linear-gradient(90deg, var(--green-mid), var(--green-light));
+  background: linear-gradient(90deg, var(--green-medium), var(--green-light));
   transition: width 0.5s ease;
 }
 
-.progress-pct {
+.progress_pct {
   font-size: 0.72rem;
   font-weight: 700;
   color: var(--green-dark);
