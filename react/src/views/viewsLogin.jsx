@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Footer from "../components/footer/footer.jsx";
+import Header from "../components/header/header.jsx";
 import Login from "./login/login.jsx";
 
 function ViewsLogin() {
@@ -7,6 +8,7 @@ function ViewsLogin() {
 
   return (
     <>
+      <Header />
       <Login />
       <Footer />
     </>

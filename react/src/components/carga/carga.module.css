@@ -1,0 +1,56 @@
+.cont {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  cursor: pointer;
+}
+.loader {
+  width: 160px;
+  height: 160px;
+  color: #f03355;
+  background:
+    conic-gradient(
+      from -45deg at top 80px left 50%,
+      #0000,
+      currentColor 1deg 90deg,
+      #0000 91deg
+    ),
+    conic-gradient(
+      from 45deg at right 80px top 50%,
+      #0000,
+      currentColor 1deg 90deg,
+      #0000 91deg
+    ),
+    conic-gradient(
+      from 135deg at bottom 80px left 50%,
+      #0000,
+      currentColor 1deg 90deg,
+      #0000 91deg
+    ),
+    conic-gradient(
+      from -135deg at left 80px top 50%,
+      #0000,
+      currentColor 1deg 90deg,
+      #0000 91deg
+    );
+  animation: l4 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+}
+@keyframes l4 {
+  50% {
+    width: 210px;
+    height: 210px;
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

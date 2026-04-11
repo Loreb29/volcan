@@ -119,7 +119,6 @@
 
 .thGrid,
 .tdGrid {
-  border: 1.5px solid var(--border);
   padding: 0;
   vertical-align: middle;
 }
@@ -164,7 +163,6 @@
   color: var(--text-header);
   padding: 10px 14px;
   letter-spacing: 0.02em;
-  border-right: 2px solid var(--border);
   position: sticky;
   left: 0;
   z-index: 1;
