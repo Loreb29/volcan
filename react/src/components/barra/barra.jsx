@@ -1,5 +1,14 @@
 import styles from "./barra.module.css";
+import { LogoutCall } from "../calls";
+import { useNavigate } from "react-router";
 function Barra() {
+  const mutation = LogoutCall("http://26.216.97.134:5678/api/v1/logout");
+  const navigate = useNavigate();
+  const click = () => {
+    mutation.mutate;
+    sessionStorage.clear();
+    navigate("/");
+  };
   return (
     <nav className={styles.navbar}>
       <a className={styles.navbar_brand} href="#">
@@ -9,7 +18,9 @@ function Barra() {
       <span className={styles.navbar_title}>Cursos</span>
       <div className={styles.navbar_user}>
         <div className={styles.user_avatar}>AD</div>
-        <span className={styles.user_name}>Admin</span>
+        <span onClick={click} className={styles.user_name}>
+          Admin
+        </span>
         <span className={styles.user_chevron}>▾</span>
       </div>
     </nav>

@@ -13,14 +13,13 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <ViewsLogin />,
-    errorElement: <ViewsCursos />,
   },
   {
-    path: "/vista",
+    path: "/cursos",
     element: <ViewsCursos />,
   },
   {
-    path: "/grid",
+    path: "/grid/:cursoId",
     element: <ViewsGrid />,
   },
 ]);
